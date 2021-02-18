@@ -22,3 +22,10 @@
     z-index: 6;
     text-decoration: none;
 }
+@mixin onhover-main-color-bg {
+    &:hover{
+        background-color: $main-color;
+        color: white;
+        border-color: $main-color;
+    }
+}

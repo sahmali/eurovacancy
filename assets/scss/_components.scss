@@ -112,22 +112,98 @@
             font-size: 24px;
             color: #252525;
             font-weight: 600;
+            text-align: center;
         }
         .sidebar-form{
             input{
                 background: #f5f8fa;
                 border: none;
-                width: 90%;
+                width: 75%;
                 padding: 18px 30px;
                 display: inline-block;
             }
             .form-submit-btn{
-                background-color: $second-color;
+                background-color: $main-color;
                 display: inline-block;
-                width: 10%;
                 @include btn($border:none,$border-radius:0,$font-size:16px,$padding:15px 20px);
             }
             
+        }
+        .ig-list{
+                  
+            li{
+                position: relative;
+                margin: 7px 3px;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    transition: .4s;
+                    left: 0;
+                    top: 0;
+                    background:$main-color;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+                &:hover{
+                    &::after{
+                        opacity: 0.75;
+                    }
+                }
+                
+            }
+            
+        }
+        .sidebar-social{
+            text-align: center;
+            li{
+                margin-right: 5px;
+                a{
+                    cursor: pointer;
+                    border: 1px solid $black;
+                    border-radius: 50%;
+                    color: $black;
+                    padding: 10px 15px;
+                    transition: .4s;
+                    @include onhover-main-color-bg;
+                }
+            }
+        }
+        .sidebar-category{
+            
+            li{border-bottom: 1px dotted $black;
+                padding: 10px 0;
+                width: 100%;
+                &:last-child{
+                     border: none;
+                }    
+                a{
+                    color: $black;
+                    font-size: 16px;
+                    transition: 0.4s;
+                    text-decoration: none;
+                    font-weight: 600;
+                    &:hover{
+                        color: $main-color;
+
+                    }
+                }
+            }
+        }
+        .sidebar-tags{
+            li{
+                display: inline-block;
+                margin: 15px 3px;
+                a{
+                    color: $black;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    border: 1px solid $lightgray;
+                    transition: .4s;
+                    @include onhover-main-color-bg;
+                }
+            }
         }
     }
     

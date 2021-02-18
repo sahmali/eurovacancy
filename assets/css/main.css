@@ -140,20 +140,20 @@
   font-size: 24px;
   color: #252525;
   font-weight: 600;
+  text-align: center;
 }
 
 .sidebar .sidebar-item .sidebar-form input {
   background: #f5f8fa;
   border: none;
-  width: 90%;
+  width: 75%;
   padding: 18px 30px;
   display: inline-block;
 }
 
 .sidebar .sidebar-item .sidebar-form .form-submit-btn {
-  background-color: #191d3b;
+  background-color: #c81912;
   display: inline-block;
-  width: 10%;
   border: none;
   border-radius: 0;
   text-align: center;
@@ -166,6 +166,92 @@
   font-weight: 600;
   z-index: 6;
   text-decoration: none;
+}
+
+.sidebar .sidebar-item .ig-list li {
+  position: relative;
+  margin: 7px 3px;
+}
+
+.sidebar .sidebar-item .ig-list li::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: .4s;
+  left: 0;
+  top: 0;
+  background: #c81912;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.sidebar .sidebar-item .ig-list li:hover::after {
+  opacity: 0.75;
+}
+
+.sidebar .sidebar-item .sidebar-social {
+  text-align: center;
+}
+
+.sidebar .sidebar-item .sidebar-social li {
+  margin-right: 5px;
+}
+
+.sidebar .sidebar-item .sidebar-social li a {
+  cursor: pointer;
+  border: 1px solid #252525;
+  border-radius: 50%;
+  color: #252525;
+  padding: 10px 15px;
+  transition: .4s;
+}
+
+.sidebar .sidebar-item .sidebar-social li a:hover {
+  background-color: #c81912;
+  color: white;
+  border-color: #c81912;
+}
+
+.sidebar .sidebar-item .sidebar-category li {
+  border-bottom: 1px dotted #252525;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.sidebar .sidebar-item .sidebar-category li:last-child {
+  border: none;
+}
+
+.sidebar .sidebar-item .sidebar-category li a {
+  color: #252525;
+  font-size: 16px;
+  transition: 0.4s;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sidebar .sidebar-item .sidebar-category li a:hover {
+  color: #c81912;
+}
+
+.sidebar .sidebar-item .sidebar-tags li {
+  display: inline-block;
+  margin: 15px 3px;
+}
+
+.sidebar .sidebar-item .sidebar-tags li a {
+  color: #252525;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  transition: .4s;
+}
+
+.sidebar .sidebar-item .sidebar-tags li a:hover {
+  background-color: #c81912;
+  color: white;
+  border-color: #c81912;
 }
 
 .section-heading {
