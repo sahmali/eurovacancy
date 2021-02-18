@@ -682,3 +682,64 @@
   color: #f64b3c;
   font-size: 55px;
 }
+
+#contact-section {
+  padding: 90px 0;
+  background: url("../img/contact_bg.png") no-repeat;
+  background-size: cover;
+}
+
+#contact-section .section-heading {
+  text-align: left;
+}
+
+#contact-section .section-heading h3 {
+  color: white;
+}
+
+#contact-section .section-heading .section-title {
+  margin-bottom: 10px;
+}
+
+#contact-section .contact-form .contact-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#contact-section .contact-form .contact-item input, #contact-section .contact-form .contact-item textarea {
+  width: 100%;
+  background: white;
+  padding: 14px 20px;
+  border: 1px solid #dfdfdf;
+  border-radius: 10px;
+}
+
+#contact-section .contact-form .contact-item::after {
+  position: absolute;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 16px;
+  text-align: center;
+  color: #c81912;
+  top: 16px;
+  right: 25px;
+}
+
+#contact-section .contact-form .btn-after {
+  border: 1px solid rgba(255, 255, 255, 0.849);
+}
+
+#contact-section .contact-form .icon-user::after {
+  content: "\f007";
+}
+
+#contact-section .contact-form .icon-mail::after {
+  content: "\f003";
+}
+
+#contact-section .contact-form .icon-file::after {
+  content: "\f249";
+}
+
+#contact-section .contact-form .icon-pen::after {
+  content: "\f040";
+}
