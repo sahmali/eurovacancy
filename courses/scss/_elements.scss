@@ -1,0 +1,76 @@
+// Section Heading
+.section-header {
+   text-align: center;
+   margin-bottom: 5rem;
+   @include xsmall {
+      margin-bottom: 3rem;
+   }
+
+   .subheading {
+      color: $main-color;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: $font-m;
+      margin-bottom: 1.25rem;
+   }
+
+   .heading {
+      font-size: 2.1875rem;
+      text-transform: capitalize;
+      @include xsmall {
+         font-size: 1.8rem;
+      }
+   }
+}
+
+// Rating Stars
+.stars {
+   color: $star-color;
+   font-size: .9rem;
+ 
+   @include large {
+       font-size: .7rem;
+   }
+ }
+
+ //Cards
+ .card {
+   @include box-shadow(3px 4px 15px $shadow);
+   
+   &-img-top {
+      height: 15vw;
+      object-fit: cover;
+      @include medium {
+         height: 25vw;
+      }
+      @include small {
+         height: 40vw;
+      }
+   }
+
+   &-body {
+      padding: 2.5rem 1.875rem;
+      @include flex;
+      flex-direction: column;
+
+      .card-head {
+         text-transform: capitalize;
+         margin-bottom: 1.25rem;
+         line-height: 1.3rem;
+         font-size: 1rem;
+      }
+
+      .card-title {
+         font-size: 1.2rem;
+         margin-bottom: 1.25rem;
+      }
+      .card-text {
+         margin-bottom: .95rem;
+      }
+
+      &__bottom {
+         margin-top: auto;
+      }
+   }
+}

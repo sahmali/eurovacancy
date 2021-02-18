@@ -1,0 +1,33 @@
+// Colors
+$main-color: #c81912;
+$second-color: #191d3b;
+$font-color: #9b9b9b; 
+$star-color: #ff7b2e;
+$white: #fff;
+$shadow: #00000026;
+$line-color: #e7e7e7;
+
+//Fonts
+$font: 'Poppins', sans-serif;
+$font-heading: 'Rubik', sans-serif;
+
+//Font weights
+$font-r: 400;
+$font-m: 600;
+$font-b: 700;
+
+//Mixins
+@mixin flex-center {
+   @include flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@mixin button-sidebar {
+   text-transform: uppercase;
+   font-weight: $font-m;
+   padding: .875rem 2.3rem;
+   font-size: .75rem;
+   color: $white;
+   border-radius: 0;
+}
