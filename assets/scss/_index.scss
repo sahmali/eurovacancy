@@ -14,7 +14,76 @@
     top: -14px;
     color: #595B6B;
 }
-
+@mixin slider-btn($icon) {
+        position: absolute;
+        z-index: 5554;
+        top: 50%;
+        outline: none;
+        opacity: .1;
+        transition: .4s;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        &::after{
+            content: $icon;
+            font-size: 50px;
+            font:normal normal normal 50px/1 FontAwesome;
+            color: white;
+            font-weight: 300;
+        }
+        &:hover{
+            opacity: 1;
+        }
+}
+////SLIDER SECTION
+#slider-section{
+    .slider-item{
+        background-image: url('../img/slider_img01.jpg');
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        padding: 200px 0;
+        font-weight: 600;
+        .slider-content{
+            h5{
+                color: white;
+                font-size: 16px;
+                font-weight: 60;
+                text-transform: uppercase;
+                letter-spacing: 6px;
+                display: block;
+                margin-bottom: 20px;
+            }
+            h2{
+                color: white;
+                font-size: 58px;
+                letter-spacing: 1.8px;
+                line-height: 1.1;
+                margin-bottom: 40px;
+                span{
+                    color: $main-text-color;
+                }
+            }
+            p{
+                color: white;
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+            .btn-after{
+                border-color: rgb(236, 234, 234);
+            }
+        }
+    }
+    .slider-next{
+        @include slider-btn('\f138');
+        right: 50px;
+    }
+    .slider-prev{
+        @include slider-btn("\f137");
+        left: 50px;
+    }
+}
 
 ////ABOUT SECTION
 #about-us{
