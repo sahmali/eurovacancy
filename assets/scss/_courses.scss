@@ -1,0 +1,33 @@
+.courses {
+   .card-body {
+      &__bottom {   
+         .course-rating {
+            @include flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2.2rem;
+   
+            .course-reviews {
+               margin-top: .5rem;
+               p {
+                  font-size: 1rem;
+               }
+               span {
+                  color: $star-color;
+                  font-size: .9rem;
+               }
+            }
+         }
+   
+         .btn-second {
+            @include flex-center;
+         }
+   
+         .course-price {
+            font-size: 1.5rem;
+            color: $second-color;
+            font-weight: $font-m
+         }
+      }
+   }
+}

@@ -1,0 +1,70 @@
+.btn-styled{
+   @include gradient-btn;
+   @include btn($border:none,$border-radius:8px,$font-size:16px,$padding:15px 45px);
+}
+.btn-animation{
+   position: relative;
+   z-index: 5;
+   display: inline-block;
+   &:hover{
+       .btn-styled{
+           color: white;
+       }
+       .btn-after{
+           top: 0;
+           left: 0;
+       }
+   }
+   .btn-after{
+       position: absolute;
+       width: 100%;
+       border: 1px $darkgray solid;
+       border-radius: 8px;
+       z-index: -2;
+       height: 50px;
+       top: 25px;
+       left: 25px;
+       transition: all .25s linear;
+       // transition: top .25s linear;
+       // transition: left .5s linear;
+
+   }
+}
+
+.btn-second {
+   border: 2px solid $main-color;
+   border-radius: .5rem;
+   background-color: transparent;
+   text-transform: uppercase;
+   font-size: .875rem;
+   padding: 1.125rem 2.8rem;
+   font-weight: $font-m;
+   color: $font-color;
+
+   &:hover {
+      background-color: $main-color;
+      color: $white;
+   }
+
+   @include small {
+      padding: .5rem 2rem;
+   }
+}
+
+.btn-sidebar {
+   @include button-sidebar;
+   background-color: $main-color;
+
+   &:hover {
+      background-color: lighten($color: $main-color, $amount: 7);
+   }
+}
+
+.btn-sidebar-light {
+   @include button-sidebar;
+   background-color: lighten($color: $main-color, $amount: 7);
+
+   &:hover {
+      background-color: $main-color;
+   }
+}
