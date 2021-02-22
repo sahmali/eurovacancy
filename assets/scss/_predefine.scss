@@ -1,0 +1,32 @@
+//Padding b/w sections
+.evcy-section {
+   padding: 7.5rem 0;
+   @include small {
+      padding: 4.5rem 0;
+   }
+}
+
+//Top padding b/w sections
+.evcy-section-top {
+   padding-top: 7.5rem;
+   @include small {
+      padding-top: 4.5rem;
+   }
+}
+
+//Background color
+.bg-color {
+   background-color: #f0f4ff;
+}
+
+//Common heading
+.heading {
+   color: $second-color;
+   font-family: $font-heading;
+   font-weight: $font-b;
+}
+
+// Disable html collapse default arrow 
+summary::-webkit-details-marker {
+   display: none;
+ }

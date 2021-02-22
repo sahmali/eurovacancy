@@ -1,6 +1,12 @@
-@import '../scss/colors';
-@import'../scss/mixins';
-@import'../scss/components';
+@import '../scss/variables';
+@import '../scss/mixins';
+@import '../scss/reset';
+@import '../scss/predefine';
+@import '../scss/elements';
+@import '../scss/buttons';
+// @import '../scss/components';
+@import '../scss/courses';
+@import '../scss/course-single';
+@import '../scss/index';
 @import '../scss/blog';
-@import'../scss/index';
-@import'../scss/blogDetails';
+@import '../scss/blogDetails';
